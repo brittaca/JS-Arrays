@@ -1,0 +1,13 @@
+array probs
+
+// Create a function called 'reversedLooper' that when passed an array will loop through it backwards and subtract 2 from the last element, 1 from the second to last, 0 from to the third to last, add one to the fourth to last, add 2 to the fifth to last, etc. until it reaches the front of the array.  Return the list when you are done
+
+
+	function reversedLooper(array) {
+  var numToAdd = -2;
+   		for (var i = array.length - 1; i >= 0; i--) {
+          array[i]=array[i]+numToAdd;
+          numToAdd++;
+        }
+        return array;
+    }
